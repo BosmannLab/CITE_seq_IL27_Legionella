@@ -1,0 +1,2 @@
+#Note:
+- While demultiplexing the binary base call files to generate fastq files (Cell Ranger mkfastq tool) prior to quantification, --barcode-mismatches=0 flag was set instead of the default --barcode-mismatches=1 flag. The 0 flag was set as there was an error message from Cell Ranger that sample indices : RPI-1 (ATCACGAT) and SI-GA-D4 (ATTCCGAT) only differ by two bases. This leads to barcode collision while demultiplexing.  This parameter was confirmed by the 10X Genomics support team. <br>
